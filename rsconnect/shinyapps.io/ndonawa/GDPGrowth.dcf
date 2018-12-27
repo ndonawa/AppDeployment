@@ -1,0 +1,13 @@
+name: GDPGrowth
+title: GDPGrowth
+username:
+account: ndonawa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 623835
+bundleId: 1785640
+url: https://ndonawa.shinyapps.io/GDPGrowth/
+when: 1545933076.819
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: DevelopingDataProjects.html|DevelopingDataProjects.Rmd

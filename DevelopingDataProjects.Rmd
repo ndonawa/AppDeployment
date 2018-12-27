@@ -30,7 +30,7 @@ head(gdproj9)
 2.Select the amount of bins for the frequency of countries by % of year over year gdp growth. 
 3.The histogram will update to show how many countries, produced GDP at different levels.
 
-The full application can be accessed here:
+The full application can be accessed here: https://ndonawa.shinyapps.io/GDPGrowth/
 
 
 ## Sample Output

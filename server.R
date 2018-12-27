@@ -1,4 +1,10 @@
 library(shiny)
+file <- read.csv("gdp.csv")
+colnames(file)[3:14] <- c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017")
+min  <- min(file[,3:14])
+max <-  max(file[,3:14])
+gdproj9 <- file
+
 
 shinyServer(
 
@@ -6,8 +12,8 @@ shinyServer(
 
 
         output$myhist <-renderPlot({
-        colm <- as.numeric(input$Year)
-        hist(gdproj9[,colm], breaks = seq(min(gdproj9[,colm]), max(gdproj9[,colm]), l = input$bins +1), col = input$color, main = "Country GDP Growth", xlab = "Frequency of Countries by GDP Growth")
+        colm1 <- as.numeric(input$Year)
+        hist(gdproj9[,colm1], breaks = input$bins +1, l = 10, col = input$color, main = "Country GDP Growth", xlab = "Frequency of Countries by GDP Growth")
                 })
 
         output$Documentation <- renderPrint({
